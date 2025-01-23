@@ -1,9 +1,10 @@
+
 <!DOCTYPE html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ensiie - Connexion</title>
+    <title> ENSIIE- Connexion</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,26 +25,23 @@
         <header class="header">
             <div class="logo">
                 <img src="logo_ensiiie.png" alt="Logo ENSIIE" class="logo-header">
-                ENSIIE
             </div>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="#">Mon compte</a></li>
-                    <li><a href="#">Règlement</a></li>
-                    <li><a href="#">Inscriptions pédagogiques</a></li>
-                    <li><a href="#" id="resultats">Résultats</a>
-                        <ul class="submenu">
-                            <li><a href="#notes-annee-en-cours">Notes aux épreuves année en cours</a></li>
-                            <li><a href="#notes-annees-precedentes">Notes aux épreuves années précédentes</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="#">Listes de diffusion</a></li>
-                    <li><a href="#">Mes bulletins</a></li>
-                    <li class="logout"><a href="#" id="logout-button">Déconnexion</a></li>
-
-                </ul>
-            </nav>
         </header>
+
+        <aside class="sidebar">
+            <ul class="menu">
+                <li><a href="#">Mon compte</a></li>
+                <li>
+                    <a href="#">Résultats</a>
+                    <ul class="submenu">
+                        <li><a href="#notes-annee-en-cours">Notes aux épreuves année en cours</a></li>
+                        <li><a href="#notes-annees-precedentes">Notes aux épreuves années précédentes</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Mes bulletins</a></li>
+                <li class="logout"><a href="#" id="logout-button">Déconnexion</a></li>
+            </ul>
+        </aside>
 
         <main class="content">
             <section id="notes-annee-en-cours">
@@ -64,14 +62,14 @@
                         </tr>
                     </thead>
                     <tbody>
-                        <tr>
+                     <tr>
                             <td>01/09/2024</td>
                             <td>FISE_COSE11_EVALG_2425</td>
-                            <td>Evaluation module de Communication / FISE / Groupe G / Semestre 1</td>
+                            <td>Evaluation module de Communication</td>
                             <td>16.60</td>
                             <td></td>
                             <td></td>
-                            <td>BOURARD Laurence, REY Marie-josé</td>
+                            <td>BOURARD Laurence</td>
                         </tr>
                         <tr>
                             <td>01/09/2024</td>
@@ -122,7 +120,7 @@
                             <td>01/09/2024</td>
                             <td>FISE_S1_GROP11_GROP11_SES1_EXAM01_2425</td>
                             <td>GROP11 Examen</td>
-                            <td>14.00</td>
+                            <td>13.00</td>
                             <td></td>
                             <td></td>
                             <td>MERABET Massinissa</td>
@@ -131,7 +129,7 @@
                             <td>06/01/2025</td>
                             <td>FISE_S1_OSSE11_OSSE11_SES1_EXAM01_2425</td>
                             <td>OSSE11 Examen</td>
-                            <td>13.00</td>
+                            <td>14.00</td>
                             <td></td>
                             <td></td>
                             <td>MOUILLERON Christophe</td>
@@ -154,3 +152,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
