@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title> ENSIIE- Connexion</title>
+    <title>ENSIIE - Connexion</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -18,7 +18,7 @@
             <input type="password" id="password" name="password" required>
             <button type="button" id="login-button">Se connecter</button>
         </form>
-        <p id="error-message" class="error-message">Identifiant ou mot de passe incorrect.</p>
+        <p id="error-message" class="error-message" style="display: none;">Identifiant ou mot de passe incorrect.</p>
     </div>
 
     <div id="content" style="display: none;">
@@ -30,21 +30,29 @@
 
         <aside class="sidebar">
             <ul class="menu">
-                <li><a href="#">Mon compte</a></li>
+                <li><a href="#" id="mon-compte-button">Mon compte</a></li>
                 <li>
-                    <a href="#">Résultats</a>
+                    <a href="#" id="resultats-button">Résultats</a>
                     <ul class="submenu">
                         <li><a href="#notes-annee-en-cours">Notes aux épreuves année en cours</a></li>
                         <li><a href="#notes-annees-precedentes">Notes aux épreuves années précédentes</a></li>
                     </ul>
                 </li>
                 <li><a href="#">Mes bulletins</a></li>
+                <li><a href="#" id="absence-button">Absences</a></li>
                 <li class="logout"><a href="#" id="logout-button">Déconnexion</a></li>
             </ul>
         </aside>
 
         <main class="content">
-            <section id="notes-annee-en-cours">
+            <!-- Section Mon Compte -->
+            <section id="mon-compte-section" style="display: none;">
+                <h2>Accueil ENSIIE</h2>
+                <p>Bienvenue sur votre espace étudiant.</p>
+            </section>
+
+            <!-- Section Notes -->
+            <section id="notes-annee-en-cours" style="display: none;">
                 <h2>Notes aux épreuves année en cours</h2>
                 <div class="search-bar">
                     <input type="text" placeholder="Rechercher">
@@ -62,7 +70,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                     <tr>
+                        <tr>
                             <td>01/09/2024</td>
                             <td>FISE_COSE11_EVALG_2425</td>
                             <td>Evaluation module de Communication</td>
@@ -160,9 +168,16 @@
                             <td></td>
                             <td></td>
                             <td>LY VATH Vathana</td>
-                        </tr>
+                          <tr>
                     </tbody>
                 </table>
+            </section>
+
+            <!-- Section Absences -->
+            <section id="absence-section" style="display: none;">
+                <h2>Absences</h2>
+                <p><strong>Nombre total d'absences:</strong> 0</p>
+                <p><strong>Durée totale des absences:</strong> 0:0</p>
             </section>
         </main>
     </div>
@@ -170,4 +185,8 @@
     <script src="script.js"></script>
 </body>
 </html>
+
+
+
+
 
